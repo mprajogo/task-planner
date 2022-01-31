@@ -87,10 +87,10 @@ form.addEventListener("submit", (event) => {
         return;
 
       } else {
-        task.addTask(taskName.value, status.value, validateAssignedTo.value, taskDescription.value, validateDueDate.value);
-        clearFormFields();
-        task.render();
+        taskManager.addTask(taskName.value, status.value, validateAssignedTo.value, taskDescription.value, validateDueDate.value);
       }
+    clearFormFields();
+    taskManager.render();
 });
 
 //task-5 Display the Current Date
